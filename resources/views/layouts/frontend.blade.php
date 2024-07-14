@@ -2401,6 +2401,15 @@
 												data-options="easing: easeOutQuart">Achievements</a>
 
 										</li>
+
+										<li id="menu-item-453"
+											class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-453 dropdown @yield('demo')">
+											<a title="Demo" href="/awards" data-toggle="dropdown1"
+												class="hvr-underline-from-left1" aria-expanded="false" data-scroll
+												data-options="easing: easeOutQuart">Awards</a>
+
+										</li>
+
 										<li id="menu-item-608"
 											class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-608 dropdown @yield('gallery')">
 											<a title="Blog" href="/gallery" data-toggle="dropdown1"

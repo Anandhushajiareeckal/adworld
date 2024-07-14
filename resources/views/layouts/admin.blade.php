@@ -226,6 +226,12 @@
 									<span class="mx-2">Achivement </span>
 								</a>
 							</li>
+							<li>
+								<a href="/admin/awards" >
+
+									<span class="mx-2">Awards </span>
+								</a>
+							</li>
 							<form method="POST" action="{{ route('logout') }}">
 								@csrf
 								<li><button type="submit" class="btn btn-danger" onclick="return confirm('Do you want to logout ?')"> Log out</button></li>

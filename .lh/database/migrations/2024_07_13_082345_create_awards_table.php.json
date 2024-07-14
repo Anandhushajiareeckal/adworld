@@ -1,0 +1,74 @@
+{
+    "sourceFile": "database/migrations/2024_07_13_082345_create_awards_table.php",
+    "activeCommit": 0,
+    "commits": [
+        {
+            "activePatchIndex": 14,
+            "patches": [
+                {
+                    "date": 1720859052929,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n"
+                },
+                {
+                    "date": 1720859078782,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -12,9 +12,9 @@\n     public function up(): void\n     {\n         Schema::create('awards', function (Blueprint $table) {\n             $table->id();\n-            \n+            $table->string('name');\n             $table->timestamps();\n         });\n     }\n \n"
+                },
+                {
+                    "date": 1720859090930,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -12,9 +12,9 @@\n     public function up(): void\n     {\n         Schema::create('awards', function (Blueprint $table) {\n             $table->id();\n-            $table->string('name');\n+            $table->string('naheme');\n             $table->timestamps();\n         });\n     }\n \n"
+                },
+                {
+                    "date": 1720859097186,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -12,9 +12,9 @@\n     public function up(): void\n     {\n         Schema::create('awards', function (Blueprint $table) {\n             $table->id();\n-            $table->string('naheme');\n+            $table->string('headline');\n             $table->timestamps();\n         });\n     }\n \n"
+                },
+                {
+                    "date": 1720859146446,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -13,8 +13,9 @@\n     {\n         Schema::create('awards', function (Blueprint $table) {\n             $table->id();\n             $table->string('headline');\n+            \n             $table->timestamps();\n         });\n     }\n \n"
+                },
+                {
+                    "date": 1720859154765,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -13,9 +13,9 @@\n     {\n         Schema::create('awards', function (Blueprint $table) {\n             $table->id();\n             $table->string('headline');\n-            \n+            $table->string('description');\n             $table->timestamps();\n         });\n     }\n \n"
+                },
+                {
+                    "date": 1720859162021,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -12,8 +12,9 @@\n     public function up(): void\n     {\n         Schema::create('awards', function (Blueprint $table) {\n             $table->id();\n+            $table->\n             $table->string('headline');\n             $table->string('description');\n             $table->timestamps();\n         });\n"
+                },
+                {
+                    "date": 1720859167275,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -12,9 +12,9 @@\n     public function up(): void\n     {\n         Schema::create('awards', function (Blueprint $table) {\n             $table->id();\n-            $table->\n+            $table->img\n             $table->string('headline');\n             $table->string('description');\n             $table->timestamps();\n         });\n"
+                },
+                {
+                    "date": 1720859175347,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -12,9 +12,9 @@\n     public function up(): void\n     {\n         Schema::create('awards', function (Blueprint $table) {\n             $table->id();\n-            $table->img\n+            $table->()\n             $table->string('headline');\n             $table->string('description');\n             $table->timestamps();\n         });\n"
+                },
+                {
+                    "date": 1720859181016,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -12,9 +12,9 @@\n     public function up(): void\n     {\n         Schema::create('awards', function (Blueprint $table) {\n             $table->id();\n-            $table->()\n+            \n             $table->string('headline');\n             $table->string('description');\n             $table->timestamps();\n         });\n"
+                },
+                {
+                    "date": 1720859202682,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -14,9 +14,9 @@\n         Schema::create('awards', function (Blueprint $table) {\n             $table->id();\n             \n             $table->string('headline');\n-            $table->string('description');\n+            $table->t('description');\n             $table->timestamps();\n         });\n     }\n \n"
+                },
+                {
+                    "date": 1720859294884,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -14,9 +14,9 @@\n         Schema::create('awards', function (Blueprint $table) {\n             $table->id();\n             \n             $table->string('headline');\n-            $table->t('description');\n+            $table->text('description');\n             $table->timestamps();\n         });\n     }\n \n"
+                },
+                {
+                    "date": 1720859350320,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -12,9 +12,9 @@\n     public function up(): void\n     {\n         Schema::create('awards', function (Blueprint $table) {\n             $table->id();\n-            \n+            $table->binary('photo');\n             $table->string('headline');\n             $table->text('description');\n             $table->timestamps();\n         });\n"
+                },
+                {
+                    "date": 1720859373844,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -12,9 +12,9 @@\n     public function up(): void\n     {\n         Schema::create('awards', function (Blueprint $table) {\n             $table->id();\n-            $table->binary('photo');\n+            $table->s('photo');\n             $table->string('headline');\n             $table->text('description');\n             $table->timestamps();\n         });\n"
+                },
+                {
+                    "date": 1720859379189,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -12,9 +12,9 @@\n     public function up(): void\n     {\n         Schema::create('awards', function (Blueprint $table) {\n             $table->id();\n-            $table->s('photo');\n+            $table->string('photo');\n             $table->string('headline');\n             $table->text('description');\n             $table->timestamps();\n         });\n"
+                }
+            ],
+            "date": 1720859052929,
+            "name": "Commit-0",
+            "content": "<?php\n\nuse Illuminate\\Database\\Migrations\\Migration;\nuse Illuminate\\Database\\Schema\\Blueprint;\nuse Illuminate\\Support\\Facades\\Schema;\n\nreturn new class extends Migration\n{\n    /**\n     * Run the migrations.\n     */\n    public function up(): void\n    {\n        Schema::create('awards', function (Blueprint $table) {\n            $table->id();\n            \n            $table->timestamps();\n        });\n    }\n\n    /**\n     * Reverse the migrations.\n     */\n    public function down(): void\n    {\n        Schema::dropIfExists('awards');\n    }\n};\n"
+        }
+    ]
+}

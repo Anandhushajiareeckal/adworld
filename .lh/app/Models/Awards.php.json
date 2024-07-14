@@ -1,0 +1,22 @@
+{
+    "sourceFile": "app/Models/Awards.php",
+    "activeCommit": 0,
+    "commits": [
+        {
+            "activePatchIndex": 1,
+            "patches": [
+                {
+                    "date": 1720859815157,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n"
+                },
+                {
+                    "date": 1720859825339,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -7,7 +7,7 @@\n \n class Awards extends Model\n {\n     use HasFactory;\n-    protected $table = 'galleries';\n+    protected $table = 'awards';\n     protected $guarded = [];\n }\n"
+                }
+            ],
+            "date": 1720859815157,
+            "name": "Commit-0",
+            "content": "<?php\n\nnamespace App\\Models;\n\nuse Illuminate\\Database\\Eloquent\\Factories\\HasFactory;\nuse Illuminate\\Database\\Eloquent\\Model;\n\nclass Awards extends Model\n{\n    use HasFactory;\n    protected $table = 'galleries';\n    protected $guarded = [];\n}\n"
+        }
+    ]
+}

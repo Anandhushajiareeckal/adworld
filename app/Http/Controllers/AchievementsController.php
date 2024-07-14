@@ -42,7 +42,8 @@ class AchievementsController extends Controller
         return view("admin.achivementes.edit", compact("achievement_list"));
     }
 
-    public function update(Request $request , string $id){
+    public function update(Request $request , string $id)
+    {
         $achievement = Achivement_list::find($id);
         $achievement->heading = $request->heading;
         $achievement->description = $request->description;

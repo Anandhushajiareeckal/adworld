@@ -1,0 +1,70 @@
+{
+    "sourceFile": "app/Http/Controllers/AwardsController.php",
+    "activeCommit": 0,
+    "commits": [
+        {
+            "activePatchIndex": 13,
+            "patches": [
+                {
+                    "date": 1720866255570,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n"
+                },
+                {
+                    "date": 1720866261477,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -10,9 +10,9 @@\n      * Display a listing of the resource.\n      */\n     public function index()\n     {\n-re\n+     return\n     }\n \n     /**\n      * Show the form for creating a new resource.\n"
+                },
+                {
+                    "date": 1720866268250,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -10,9 +10,9 @@\n      * Display a listing of the resource.\n      */\n     public function index()\n     {\n-     return\n+            \n     }\n \n     /**\n      * Show the form for creating a new resource.\n"
+                },
+                {
+                    "date": 1720866290483,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -10,9 +10,9 @@\n      * Display a listing of the resource.\n      */\n     public function index()\n     {\n-            \n+        return \n     }\n \n     /**\n      * Show the form for creating a new resource.\n"
+                },
+                {
+                    "date": 1720866295704,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -10,9 +10,9 @@\n      * Display a listing of the resource.\n      */\n     public function index()\n     {\n-        return \n+        return 'hello';\n     }\n \n     /**\n      * Show the form for creating a new resource.\n"
+                },
+                {
+                    "date": 1720867076159,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -10,9 +10,9 @@\n      * Display a listing of the resource.\n      */\n     public function index()\n     {\n-        return 'hello';\n+        return view();\n     }\n \n     /**\n      * Show the form for creating a new resource.\n"
+                },
+                {
+                    "date": 1720867083636,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -10,9 +10,9 @@\n      * Display a listing of the resource.\n      */\n     public function index()\n     {\n-        return view();\n+        return view(fr);\n     }\n \n     /**\n      * Show the form for creating a new resource.\n"
+                },
+                {
+                    "date": 1720867108422,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -10,9 +10,9 @@\n      * Display a listing of the resource.\n      */\n     public function index()\n     {\n-        return view(fr);\n+        return view();\n     }\n \n     /**\n      * Show the form for creating a new resource.\n"
+                },
+                {
+                    "date": 1720867115360,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -10,9 +10,9 @@\n      * Display a listing of the resource.\n      */\n     public function index()\n     {\n-        return view();\n+        return view(admin.);\n     }\n \n     /**\n      * Show the form for creating a new resource.\n"
+                },
+                {
+                    "date": 1720867120675,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -10,9 +10,9 @@\n      * Display a listing of the resource.\n      */\n     public function index()\n     {\n-        return view(admin.);\n+        return view(admin.awards.);\n     }\n \n     /**\n      * Show the form for creating a new resource.\n"
+                },
+                {
+                    "date": 1720867131229,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -10,9 +10,9 @@\n      * Display a listing of the resource.\n      */\n     public function index()\n     {\n-        return view(admin.awards.);\n+        return view(admin.awards.index');\n     }\n \n     /**\n      * Show the form for creating a new resource.\n"
+                },
+                {
+                    "date": 1720867149984,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -10,9 +10,9 @@\n      * Display a listing of the resource.\n      */\n     public function index()\n     {\n-        return view(admin.awards.index');\n+        return view('admin.awards.indejnx');\n     }\n \n     /**\n      * Show the form for creating a new resource.\n"
+                },
+                {
+                    "date": 1720867546043,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -9,9 +9,9 @@\n     /**\n      * Display a listing of the resource.\n      */\n     public function index()\n-    {d\n+    {\n         return view('admin.awards.index');\n     }\n \n     /**\n"
+                },
+                {
+                    "date": 1720867591505,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -10,9 +10,9 @@\n      * Display a listing of the resource.\n      */\n     public function index()\n     {   \n-        awar\n+        award\n         return view('admin.awards.index');\n     }\n \n     /**\n"
+                }
+            ],
+            "date": 1720866255570,
+            "name": "Commit-0",
+            "content": "<?php\n\nnamespace App\\Http\\Controllers;\n\nuse Illuminate\\Http\\Request;\n\nclass AwardsController extends Controller\n{\n    /**\n     * Display a listing of the resource.\n     */\n    public function index()\n    {\nre\n    }\n\n    /**\n     * Show the form for creating a new resource.\n     */\n    public function create()\n    {\n        //\n    }\n\n    /**\n     * Store a newly created resource in storage.\n     */\n    public function store(Request $request)\n    {\n        //\n    }\n\n    /**\n     * Display the specified resource.\n     */\n    public function show(string $id)\n    {\n        //\n    }\n\n    /**\n     * Show the form for editing the specified resource.\n     */\n    public function edit(string $id)\n    {\n        //\n    }\n\n    /**\n     * Update the specified resource in storage.\n     */\n    public function update(Request $request, string $id)\n    {\n        //\n    }\n\n    /**\n     * Remove the specified resource from storage.\n     */\n    public function destroy(string $id)\n    {\n        //\n    }\n}\n"
+        }
+    ]
+}

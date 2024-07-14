@@ -1,0 +1,42 @@
+{
+    "sourceFile": "app/Http/Controllers/AchievementsController.php",
+    "activeCommit": 0,
+    "commits": [
+        {
+            "activePatchIndex": 6,
+            "patches": [
+                {
+                    "date": 1720866695577,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n"
+                },
+                {
+                    "date": 1720872384374,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -20,12 +20,9 @@\n     }\n \n     public function show(string $id){\n         $achievement_list = Achivement_list::where('ach_id', $id)->get();\n-        return view(\"admin.achivement\n-        \n-        \n-        es.show\", compact(\"achievement_list\", \"id\"));\n+        return view(\"admin.achivementes.show\", compact(\"achievement_list\", \"id\"));\n     }\n \n     public function create(string $id){\n         return view(\"admin.achivementes.create\", compact(\"id\"));\n@@ -49,9 +46,9 @@\n         $achievement = Achivement_list::find($id);\n         $achievement->heading = $request->heading;\n         $achievement->description = $request->description;\n         $achievement->save();\n-        return redirect()->back();\n+        return redirect();\n \n     }\n \n     public function item_delete(string $id){\n"
+                },
+                {
+                    "date": 1720872395013,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -46,9 +46,9 @@\n         $achievement = Achivement_list::find($id);\n         $achievement->heading = $request->heading;\n         $achievement->description = $request->description;\n         $achievement->save();\n-        return redirect();\n+        return redirect(/);\n \n     }\n \n     public function item_delete(string $id){\n"
+                },
+                {
+                    "date": 1720872435699,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -46,9 +46,9 @@\n         $achievement = Achivement_list::find($id);\n         $achievement->heading = $request->heading;\n         $achievement->description = $request->description;\n         $achievement->save();\n-        return redirect(/);\n+        return redirect('admin/achievement/show/1');\n \n     }\n \n     public function item_delete(string $id){\n"
+                },
+                {
+                    "date": 1720872452180,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -46,9 +46,9 @@\n         $achievement = Achivement_list::find($id);\n         $achievement->heading = $request->heading;\n         $achievement->description = $request->description;\n         $achievement->save();\n-        return redirect('admin/achievement/show/1');\n+        return redirect()->back();\n \n     }\n \n     public function item_delete(string $id){\n"
+                },
+                {
+                    "date": 1720939170720,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -38,9 +38,9 @@\n     }\n \n     public function edit(string $id){\n         $achievement_list = Achivement_list::find($id);\n-        return view(\"admin.achivementes.edit\", compact(\"achievement_list\"));\n+        $awards->img = $request->img;\n     }\n \n     public function update(Request $request , string $id){\n         $achievement = Achivement_list::find($id);\n"
+                },
+                {
+                    "date": 1720939535325,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -38,12 +38,13 @@\n     }\n \n     public function edit(string $id){\n         $achievement_list = Achivement_list::find($id);\n-        $awards->img = $request->img;\n+        return view(\"admin.achivementes.edit\", compact(\"achievement_list\"));\n     }\n \n-    public function update(Request $request , string $id){\n+    public function update(Request $request , string $id)\n+    {\n         $achievement = Achivement_list::find($id);\n         $achievement->heading = $request->heading;\n         $achievement->description = $request->description;\n         $achievement->save();\n"
+                }
+            ],
+            "date": 1720866695577,
+            "name": "Commit-0",
+            "content": "<?php\n\nnamespace App\\Http\\Controllers;\n\nuse Illuminate\\Http\\Request;\nuse App\\Models\\Achievement;\nuse App\\Models\\Achivement_list;\nclass AchievementsController extends Controller\n{\n    public function index(){\n        $achievements = Achievement::all();\n        return view(\"admin.achivementes.index\", compact(\"achievements\"));\n    }\n\n    public function store(Request $request){\n        $achievement = new Achievement();\n        $achievement->type = $request->name;\n        $achievement->save();\n        return redirect()->back();\n    }\n\n    public function show(string $id){\n        $achievement_list = Achivement_list::where('ach_id', $id)->get();\n        return view(\"admin.achivement\n        \n        \n        es.show\", compact(\"achievement_list\", \"id\"));\n    }\n\n    public function create(string $id){\n        return view(\"admin.achivementes.create\", compact(\"id\"));\n    }\n\n    public function store_data(Request $request){\n        $achievement = new Achivement_list();\n        $achievement->ach_id = $request->ach_id;\n        $achievement->heading = $request->heading;\n        $achievement->description = $request->description;\n        $achievement->save();\n        return redirect()->back();\n    }\n\n    public function edit(string $id){\n        $achievement_list = Achivement_list::find($id);\n        return view(\"admin.achivementes.edit\", compact(\"achievement_list\"));\n    }\n\n    public function update(Request $request , string $id){\n        $achievement = Achivement_list::find($id);\n        $achievement->heading = $request->heading;\n        $achievement->description = $request->description;\n        $achievement->save();\n        return redirect()->back();\n\n    }\n\n    public function item_delete(string $id){\n        $achievement = Achivement_list::find($id);\n        $achievement->delete();\n        return redirect()->back();\n    }\n\n    public function all_delete(string $id){\n        $achievement = Achievement::find($id);\n        $achievement_list = Achivement_list::where('ach_id', $id)->get();\n\n        if($achievement_list){\n            foreach($achievement_list as $achievement){\n                $achievement->delete();\n            }\n        }\n        $achievement->delete();\n\n        return redirect()->back();\n\n    }\n\n}\n"
+        }
+    ]
+}

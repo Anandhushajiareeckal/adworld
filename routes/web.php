@@ -24,6 +24,7 @@ Route::get("/service","App\Http\Controllers\FrontendController@service");
 Route::get("/achievements","App\Http\Controllers\FrontendController@achievements");
 Route::get("/gallery","App\Http\Controllers\FrontendController@gallery");
 Route::get("/contact","App\Http\Controllers\FrontendController@contact");
+Route::get("/awards","App\Http\Controllers\FrontendController@awards");
 
 
 
@@ -56,6 +57,19 @@ Route::prefix('admin')->middleware(['auth', 'verified'])->group(function () {
         Route::put("/update/{id}","App\Http\Controllers\AchievementsController@update")->name('achievement_update');
         Route::get("/delete/{id}","App\Http\Controllers\AchievementsController@item_delete")->name('achievement_delete');
         Route::get("/all/delete/{id}","App\Http\Controllers\AchievementsController@all_delete")->name('achievement_all_delete');
+
+    });
+
+    Route::prefix('awards')->group(function () {
+        Route::get("/","App\Http\Controllers\AwardsController@index")->name('awards');
+        Route::get("/show/{id}","App\Http\Controllers\AwardsController@show")->name('awards_show');
+        Route::get("/create","App\Http\Controllers\AwardsController@create")->name('awards_create');
+        Route::post("/store/data","App\Http\Controllers\AwardsController@store_data")->name('awards_store_data');
+        Route::get("/edit/{id}","App\Http\Controllers\AwardsController@edit")->name('awards_edit');
+        Route::put("/update/{id}","App\Http\Controllers\AwardsController@update")->name('awards_update');
+        Route::get("/delete/{id}","App\Http\Controllers\AwardsController@item_delete")->name('awards_delete');
+        Route::get("/all/delete/{id}","App\Http\Controllers\AwardsControlle@all_delete")->name('awards_all_delete');
+
 
     });
 });

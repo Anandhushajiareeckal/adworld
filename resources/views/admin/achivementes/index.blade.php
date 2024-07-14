@@ -15,7 +15,7 @@
                     </div>
                 </div>
                 <div class="card-body table-main-one">
-                    <div class="table-responsive">
+                    <div class="table-responsive" >
                         <table class="table mb-0 align-middle myDataTable table-hover" style="width: 100%;">
                             <thead>
                                 <tr>

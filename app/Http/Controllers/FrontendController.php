@@ -4,6 +4,7 @@ namespace App\Http\Controllers;
 use App\Models\Achievement;
 use App\Models\Achivement_list;
 use App\Models\gallery;
+use App\Models\Awards;
 use Illuminate\Http\Request;
 
 class FrontendController extends Controller
@@ -25,6 +26,11 @@ class FrontendController extends Controller
         $achivement_list = Achivement_list::all();
         return view('frontend.achievements', compact('achievements','achivement_list'));
     }
+    public function awards(){
+        $awards= Awards::all();
+        return view('frontend.awards',compact('awards'));
+    }
+
 
     public function gallery(){
         $gallery = gallery::all();

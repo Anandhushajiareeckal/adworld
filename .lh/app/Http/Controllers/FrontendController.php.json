@@ -1,0 +1,142 @@
+{
+    "sourceFile": "app/Http/Controllers/FrontendController.php",
+    "activeCommit": 0,
+    "commits": [
+        {
+            "activePatchIndex": 31,
+            "patches": [
+                {
+                    "date": 1720787666522,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n"
+                },
+                {
+                    "date": 1720787672081,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -25,9 +25,9 @@\n         $achivement_list = Achivement_list::all();\n         return view('frontend.achievements', compact('achievements','achivement_list'));\n     }\n     public function about(){\n-        return view('frontend.about');\n+        return view('frontend.abdemoout');\n     }\n \n \n     public function gallery(){\n"
+                },
+                {
+                    "date": 1720787678986,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -25,9 +25,9 @@\n         $achivement_list = Achivement_list::all();\n         return view('frontend.achievements', compact('achievements','achivement_list'));\n     }\n     public function about(){\n-        return view('frontend.abdemoout');\n+        return view('frontend.demo');\n     }\n \n \n     public function gallery(){\n"
+                },
+                {
+                    "date": 1720787689621,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -24,9 +24,9 @@\n         $achievements = Achievement::all();\n         $achivement_list = Achivement_list::all();\n         return view('frontend.achievements', compact('achievements','achivement_list'));\n     }\n-    public function about(){\n+    public function demo(){\n         return view('frontend.demo');\n     }\n \n \n"
+                },
+                {
+                    "date": 1720860777517,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -25,9 +25,9 @@\n         $achivement_list = Achivement_list::all();\n         return view('frontend.achievements', compact('achievements','achivement_list'));\n     }\n     public function demo(){\n-        return view('frontend.demo');\n+        return view('frontend.demAWo');\n     }\n \n \n     public function gallery(){\n"
+                },
+                {
+                    "date": 1720860783617,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -25,9 +25,9 @@\n         $achivement_list = Achivement_list::all();\n         return view('frontend.achievements', compact('achievements','achivement_list'));\n     }\n     public function demo(){\n-        return view('frontend.demAWo');\n+        return view('frontend.AWARDS');\n     }\n \n \n     public function gallery(){\n"
+                },
+                {
+                    "date": 1720860790169,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -25,9 +25,9 @@\n         $achivement_list = Achivement_list::all();\n         return view('frontend.achievements', compact('achievements','achivement_list'));\n     }\n     public function demo(){\n-        return view('frontend.AWARDS');\n+        return view('frontend.awards');\n     }\n \n \n     public function gallery(){\n"
+                },
+                {
+                    "date": 1720860798655,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -24,9 +24,9 @@\n         $achievements = Achievement::all();\n         $achivement_list = Achivement_list::all();\n         return view('frontend.achievements', compact('achievements','achivement_list'));\n     }\n-    public function demo(){\n+    public function awards(){\n         return view('frontend.awards');\n     }\n \n \n"
+                },
+                {
+                    "date": 1720860849069,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -24,9 +24,9 @@\n         $achievements = Achievement::all();\n         $achivement_list = Achivement_list::all();\n         return view('frontend.achievements', compact('achievements','achivement_list'));\n     }\n-    public function awards(){\n+    public function demo(){\n         return view('frontend.awards');\n     }\n \n \n"
+                },
+                {
+                    "date": 1720860860186,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -24,9 +24,9 @@\n         $achievements = Achievement::all();\n         $achivement_list = Achivement_list::all();\n         return view('frontend.achievements', compact('achievements','achivement_list'));\n     }\n-    public function demo(){\n+    public function awards(){\n         return view('frontend.awards');\n     }\n \n \n"
+                },
+                {
+                    "date": 1720948056837,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -25,9 +25,9 @@\n         $achivement_list = Achivement_list::all();\n         return view('frontend.achievements', compact('achievements','achivement_list'));\n     }\n     public function awards(){\n-        return view('frontend.awards');\n+        return view('frontend.awards',);\n     }\n \n \n     public function gallery(){\n"
+                },
+                {
+                    "date": 1720948062381,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -25,9 +25,9 @@\n         $achivement_list = Achivement_list::all();\n         return view('frontend.achievements', compact('achievements','achivement_list'));\n     }\n     public function awards(){\n-        return view('frontend.awards',);\n+        return view('frontend.awards',['AWARDS']);\n     }\n \n \n     public function gallery(){\n"
+                },
+                {
+                    "date": 1720948069665,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -25,9 +25,9 @@\n         $achivement_list = Achivement_list::all();\n         return view('frontend.achievements', compact('achievements','achivement_list'));\n     }\n     public function awards(){\n-        return view('frontend.awards',['AWARDS']);\n+        return view('frontend.awards',['awards'=]);\n     }\n \n \n     public function gallery(){\n"
+                },
+                {
+                    "date": 1720948084885,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -25,9 +25,30 @@\n         $achivement_list = Achivement_list::all();\n         return view('frontend.achievements', compact('achievements','achivement_list'));\n     }\n     public function awards(){\n-        return view('frontend.awards',['awards'=]);\n+        return view('frontend.awards',['awards'=public function update(Request $request, string $id)\n+        {\n+            $awards = Awards::find($id);\n+            $awards -> headline = $request->headline;\n+            $awards -> description = $request->description;\n+            if ($request->file('img'))\n+             {\n+                $imagePath = public_path($awards->img);\n+                if (File::exists($imagePath)) {\n+                    File::delete($imagePath);\n+                }\n+                $image = $request->file('img');\n+                $imageName = time().'.'.$image->getClientOriginalExtension();\n+                $image->move(public_path('images'), $imageName);\n+    \n+                // You can also store the image path in your database if needed\n+                 $awards -> img = '/images/'.$imageName;\n+            }\n+            $awards -> save();\n+            return redirect(route('awards',['awards'=>$awards]));\n+    \n+        }]);\n     }\n \n \n     public function gallery(){\n"
+                },
+                {
+                    "date": 1720948092159,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -25,30 +25,9 @@\n         $achivement_list = Achivement_list::all();\n         return view('frontend.achievements', compact('achievements','achivement_list'));\n     }\n     public function awards(){\n-        return view('frontend.awards',['awards'=public function update(Request $request, string $id)\n-        {\n-            $awards = Awards::find($id);\n-            $awards -> headline = $request->headline;\n-            $awards -> description = $request->description;\n-            if ($request->file('img'))\n-             {\n-                $imagePath = public_path($awards->img);\n-                if (File::exists($imagePath)) {\n-                    File::delete($imagePath);\n-                }\n-                $image = $request->file('img');\n-                $imageName = time().'.'.$image->getClientOriginalExtension();\n-                $image->move(public_path('images'), $imageName);\n-    \n-                // You can also store the image path in your database if needed\n-                 $awards -> img = '/images/'.$imageName;\n-            }\n-            $awards -> save();\n-            return redirect(route('awards',['awards'=>$awards]));\n-    \n-        }]);\n+        return view('frontend.awards',['awards']);\n     }\n \n \n     public function gallery(){\n"
+                },
+                {
+                    "date": 1720948111293,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -25,9 +25,9 @@\n         $achivement_list = Achivement_list::all();\n         return view('frontend.achievements', compact('achievements','achivement_list'));\n     }\n     public function awards(){\n-        return view('frontend.awards',['awards']);\n+        return view('frontend.awards',['awards'=>$awards]);\n     }\n \n \n     public function gallery(){\n"
+                },
+                {
+                    "date": 1720948127845,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -25,9 +25,9 @@\n         $achivement_list = Achivement_list::all();\n         return view('frontend.achievements', compact('achievements','achivement_list'));\n     }\n     public function awards(){\n-        return view('frontend.awards',['awards'=>$awards]);\n+        return view('frontend.awards');\n     }\n \n \n     public function gallery(){\n"
+                },
+                {
+                    "date": 1720958051309,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -25,8 +25,9 @@\n         $achivement_list = Achivement_list::all();\n         return view('frontend.achievements', compact('achievements','achivement_list'));\n     }\n     public function awards(){\n+        \n         return view('frontend.awards');\n     }\n \n \n"
+                },
+                {
+                    "date": 1720958058028,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -25,9 +25,9 @@\n         $achivement_list = Achivement_list::all();\n         return view('frontend.achievements', compact('achievements','achivement_list'));\n     }\n     public function awards(){\n-        \n+        $awrads = \n         return view('frontend.awards');\n     }\n \n \n"
+                },
+                {
+                    "date": 1720958065780,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -25,9 +25,9 @@\n         $achivement_list = Achivement_list::all();\n         return view('frontend.achievements', compact('achievements','achivement_list'));\n     }\n     public function awards(){\n-        $awrads = \n+        $awrads = Awards::all()\n         return view('frontend.awards');\n     }\n \n \n"
+                },
+                {
+                    "date": 1720958073592,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -25,9 +25,10 @@\n         $achivement_list = Achivement_list::all();\n         return view('frontend.achievements', compact('achievements','achivement_list'));\n     }\n     public function awards(){\n-        $awrads = Awards::all()\n+        $awrads = Awards::all();\n+        $awards = \n         return view('frontend.awards');\n     }\n \n \n"
+                },
+                {
+                    "date": 1720958089952,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -26,9 +26,8 @@\n         return view('frontend.achievements', compact('achievements','achivement_list'));\n     }\n     public function awards(){\n         $awrads = Awards::all();\n-        $awards = \n         return view('frontend.awards');\n     }\n \n \n"
+                },
+                {
+                    "date": 1720958096940,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -26,9 +26,9 @@\n         return view('frontend.achievements', compact('achievements','achivement_list'));\n     }\n     public function awards(){\n         $awrads = Awards::all();\n-        return view('frontend.awards');\n+        return view('frontend.awards',);\n     }\n \n \n     public function gallery(){\n"
+                },
+                {
+                    "date": 1720958105311,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -26,9 +26,9 @@\n         return view('frontend.achievements', compact('achievements','achivement_list'));\n     }\n     public function awards(){\n         $awrads = Awards::all();\n-        return view('frontend.awards',);\n+        return view('frontend.awards',['awards']);\n     }\n \n \n     public function gallery(){\n"
+                },
+                {
+                    "date": 1720958111022,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -26,9 +26,9 @@\n         return view('frontend.achievements', compact('achievements','achivement_list'));\n     }\n     public function awards(){\n         $awrads = Awards::all();\n-        return view('frontend.awards',['awards']);\n+        return view('frontend.awards',['awards'=>$awards]);\n     }\n \n \n     public function gallery(){\n"
+                },
+                {
+                    "date": 1720958275090,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -26,9 +26,9 @@\n         return view('frontend.achievements', compact('achievements','achivement_list'));\n     }\n     public function awards(){\n         $awrads = Awards::all();\n-        return view('frontend.awards',['awards'=>$awards]);\n+        return view('frontend.awards',compact('gallery'));\n     }\n \n \n     public function gallery(){\n"
+                },
+                {
+                    "date": 1720958301452,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -25,10 +25,10 @@\n         $achivement_list = Achivement_list::all();\n         return view('frontend.achievements', compact('achievements','achivement_list'));\n     }\n     public function awards(){\n-        $awrads = Awards::all();\n-        return view('frontend.awards',compact('gallery'));\n+        $awards= Awards::all();\n+        return view('frontend.awards',compact('awards'));\n     }\n \n \n     public function gallery(){\n"
+                },
+                {
+                    "date": 1720958337811,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -25,9 +25,9 @@\n         $achivement_list = Achivement_list::all();\n         return view('frontend.achievements', compact('achievements','achivement_list'));\n     }\n     public function awards(){\n-        $awards= Awards::all();\n+        $awards= awards::all();\n         return view('frontend.awards',compact('awards'));\n     }\n \n \n"
+                },
+                {
+                    "date": 1720958344754,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -25,9 +25,9 @@\n         $achivement_list = Achivement_list::all();\n         return view('frontend.achievements', compact('achievements','achivement_list'));\n     }\n     public function awards(){\n-        $awards= awards::all();\n+        $awards= wards::all();\n         return view('frontend.awards',compact('awards'));\n     }\n \n \n"
+                },
+                {
+                    "date": 1720958381261,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -25,9 +25,9 @@\n         $achivement_list = Achivement_list::all();\n         return view('frontend.achievements', compact('achievements','achivement_list'));\n     }\n     public function awards(){\n-        $awards= wards::all();\n+        $awards= Awards::all();\n         return view('frontend.awards',compact('awards'));\n     }\n \n \n"
+                },
+                {
+                    "date": 1720958485820,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -3,9 +3,9 @@\n namespace App\\Http\\Controllers;\n use App\\Models\\Achievement;\n use App\\Models\\Achivement_list;\n use App\\Models\\gallery;\n-\n+use App\\Models\\gallery;\n use Illuminate\\Http\\Request;\n \n class FrontendController extends Controller\n {\n"
+                },
+                {
+                    "date": 1720958495015,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -3,9 +3,9 @@\n namespace App\\Http\\Controllers;\n use App\\Models\\Achievement;\n use App\\Models\\Achivement_list;\n use App\\Models\\gallery;\n-use App\\Models\\A;\n+use App\\Models\\Aw;\n use Illuminate\\Http\\Request;\n \n class FrontendController extends Controller\n {\n"
+                }
+            ],
+            "date": 1720787666522,
+            "name": "Commit-0",
+            "content": "<?php\n\nnamespace App\\Http\\Controllers;\nuse App\\Models\\Achievement;\nuse App\\Models\\Achivement_list;\nuse App\\Models\\gallery;\nuse Illuminate\\Http\\Request;\n\nclass FrontendController extends Controller\n{\n    public function index(){\n        return view('frontend.index');\n    }\n\n    public function about(){\n        return view('frontend.about');\n    }\n\n    public function service(){\n        return view('frontend.service');\n    }\n\n    public function achievements(){\n        $achievements = Achievement::all();\n        $achivement_list = Achivement_list::all();\n        return view('frontend.achievements', compact('achievements','achivement_list'));\n    }\n    public function about(){\n        return view('frontend.about');\n    }\n\n\n    public function gallery(){\n        $gallery = gallery::all();\n        return view('frontend.gallery', compact('gallery'));\n    }\n\n    public function contact(){\n        return view('frontend.contact');\n    }\n\n}\n"
+        }
+    ]
+}
